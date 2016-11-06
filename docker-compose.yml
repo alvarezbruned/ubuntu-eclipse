@@ -1,12 +1,13 @@
 version: '2'
 services:
   desktop:
-    image: 'albertalvarezbruned/ubuntu-vnc-light:latest'
+    image: 'albertalvarezbruned/ubuntu-eclipse:latest'
     ports:
       - '5901:5901'
       - '6901:6901'
     volumes:
       - './home/:/home/'
+      - './worspace:/root/worspace'
     environment:
       - VNC_PW=mipass
 
