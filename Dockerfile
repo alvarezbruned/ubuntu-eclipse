@@ -19,7 +19,7 @@ ADD config /root/.config
 ADD Desktop /root/Desktop
 ADD scripts /root/scripts
 RUN chmod +x /root/.vnc/xstartup /etc/X11/xinit/xinitrc /root/scripts/*.sh /root/Desktop/*.desktop
-##. Install java and netbeans
+##. Install java and eclipse
 
 RUN apt-get install software-properties-common -y
 RUN add-apt-repository -y ppa:webupd8team/java
